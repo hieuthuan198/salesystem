@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/salesystem</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.enable_lazy_load_no_trans">true</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <mapping class="entitis.Account"/>
+  <mapping class="entitis.AddresssShip"/>
+  <mapping class="entitis.Banner"/>
+  <mapping class="entitis.Blog"/>
+  <mapping class="entitis.Brand"/>
+  <mapping class="entitis.Caterogy"/>
+  <mapping class="entitis.CommentBlog"/>
+  <mapping class="entitis.CommentProduct"/>
+  <mapping class="entitis.Coppon"/>
+  <mapping class="entitis.Employee"/>
+  <mapping class="entitis.EvaluateProduct"/>
+  <mapping class="entitis.Feedback"/>
+  <mapping class="entitis.FeedbackRep"/>
+  <mapping class="entitis.ImageProduct"/>
+  <mapping class="entitis.ImageType"/>
+  <mapping class="entitis.InformationUser"/>
+  <mapping class="entitis.Order"/>
+  <mapping class="entitis.OrderDetail"/>
+  <mapping class="entitis.Payment"/>
+  <mapping class="entitis.Product"/>
+  <mapping class="entitis.ProductType"/>
+  <mapping class="entitis.RepCommentBlog"/>
+  <mapping class="entitis.RepcommentProduct"/>
+  <mapping class="entitis.Role"/>
+  <mapping class="entitis.Sale"/>
+  <mapping class="entitis.Ship"/>
+  <mapping class="entitis.Store"/>
+  <mapping class="entitis.StoreType"/>
+  <mapping class="entitis.ImageBlog"/>
+ </session-factory>
+</hibernate-configuration>
